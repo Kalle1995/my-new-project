@@ -34,6 +34,7 @@ body {
 
 .NavList { 
     margin-top: 10px;
+    
      
 }
 
@@ -62,6 +63,10 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
+    border: solid;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .product-pic {
@@ -134,16 +139,30 @@ aside > p {
     padding-top: 20px;
 }
 .product-table {
-  
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+    img {
+        width: 25px;
+    }
     th{
         background-color: gray;
+        border: 1px solid black;
     }
     tr:nth-child(2) {
-        background-color: rgb(196, 194, 194);      
+        background-color: rgb(196, 194, 194);  
+        border: 1px solid black    
+    }
+    td{
+        border: 1px solid black
+    }
+    
 }
 
- 
-}
+
 .liknande {
     margin-top: 40px;
         margin-bottom: 20px;
@@ -169,22 +188,25 @@ aside > p {
         color: black;
     }
 }
-.product-table {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    img {
-        width: 25px;
-    }
-}
-.table {
-    tr:nth-child(1) {
-        background-color: gray;
+
+.table{
+   th{
+    border: 1px solid black;
+   }
+   tr{
+    border: 1px solid black;
+   }
+   td{
+    border: 1px solid black;
+   }
+   tr:nth-child(1) {
+    background-color: gray;
     }
     tr:nth-child(2) {
-        background-color: rgb(192, 184, 184);
+    background-color: rgb(192, 184, 184);
     }
 }
+
 .first-last {
     display: inline-flex;
     flex-wrap: wrap;
@@ -192,8 +214,9 @@ aside > p {
         max-width: 100%;
         gap: 10px;
     }
-    
+ 
 }
+
 
 
 
@@ -311,31 +334,40 @@ aside > p {
     }
     .color {
         width: 100;
-       
+        
     }
+    
+
     .svart {
         border: solid;
         margin-bottom: 0px;
         padding-top: 15px;
         display: flex;
-        grid-template-rows: repeat(2, 1fr);
-        flex-direction: row;
+        justify-content: space-evenly;
+        
     }
-    
+    .KR{
+        display: grid;
+    }
     .vit {
         border: solid;
         margin-bottom: 10px;
         padding-top: 15px;
         display: flex;
         width: 100%;
-        
     }
+
     .put {
         margin-bottom: 10px;
     }
+
     .first-last {
         display: block;
     }
+    .lorem-inside-img {
+        display: none;
+    }
+
 }
 
 @media (min-width: 640px) {
@@ -369,6 +401,9 @@ aside > p {
        display: flex;
        width:100%;
        flex-wrap: wrap;
+       img {
+        width: 30px;
+       }
        
     }
     .info-cart {
@@ -398,6 +433,10 @@ aside > p {
     body {
         font-size: 1.5em;
     }
+    .lorem-inside-img {
+        display: none;
+    }
+    
    
 }   
 
@@ -460,7 +499,23 @@ aside > p {
     .put {
         margin-top: 15px; 
     }
+    .lorem-inside-img {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap:10px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
     
+
+    .first-lorem {
+        position: absolute;
+        font-weight: bolder;
+    }
+
+ 
 }
 
 
