@@ -66,7 +66,6 @@
                   <td>1</td>
                   <td>199 kr</td>
                   <td>199 kr</td>
-
                 </tr>
                 <tr>
                   <td>vit T-Shirt</td>
@@ -97,6 +96,7 @@
        
             <article id="uppgifter">
             <form action="#">
+              <div class="first-last">
                 <p>
                     <label for="firstName">Förnamn</label> <br>
                     <input class="first" type="text" name="firstName" id="firstName" placeholder="Khaled" autocomplete="on" autofocus>
@@ -105,34 +105,36 @@
                     <label for="lastNamed">Efternamn</label> <br>
                     <input class="last" type="text" name="lastName" id="lastName" placeholder="Heteni" autocomplete="on">
                 </p>
+              
                 <p>
                     <label for="Email">E-post</label> <br>
                     <input class="email" type="email" name="Email" id="Email" placeholder="info@gmail.com">
                 </p>
+              </div>
 
                 <fieldset>
                     <legend>Adress</legend>
                     <p>
-                        <label for="street">Gata</label> <br>
+                        <label for="street" class="street">Gata</label> <br>
                         <input type="text" name="street" id="street" placeholder="Storgatan">
                     </p>
                     <p>
-                        <label for="ZipCode">Postnummer</label> <br>
+                        <label for="ZipCode" class="zip">Postnummer</label> <br>
                         <input type="number" name="ZipCode" id="ZipCode" placeholder="12345">
                     </p>
                     <p>
-                        <label for="City">Stad</label> <br>
+                        <label for="City" class="city">Stad</label> <br>
                         <input type="text" name="City" id="City" placeholder="Stockholm">
                     </p>
                 </fieldset>
             </article>        
-                <section>
+                
                     <input type="checkbox">
                     <label for="News" id="News">Jag vill ta emot nyhetsbrev</label>
                     <div class="buy">  
-                        <button name="buy" type="submit" value="">Köp</button>
+                        <button name="buy" type="submit" value="" ><a href="produkter.html">Köp</a></button>
                     </div>
-                </section>
+                
             </form>
       
      
