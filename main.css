@@ -34,7 +34,9 @@ body {
 
 .NavList { 
     margin-top: 10px;
-    
+    ul {
+        padding-left: 0;
+    }
      
 }
 
@@ -216,6 +218,7 @@ aside > p {
     }
  
 }
+
 
 
 
@@ -507,12 +510,14 @@ aside > p {
         width: 100%;
         height: auto;
         margin-bottom: 15px;
+        
     }
     
 
     .first-lorem {
         position: absolute;
         font-weight: bolder;
+        
     }
 
  
@@ -561,9 +566,6 @@ header>h3 {
 
 
 
-/*
-kassa sidan 
-*/
 .Kassa {
     text-align: center;
 }
@@ -616,7 +618,10 @@ kassa sidan
 
 .list {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    a{
+        text-decoration: none;
+    }  
 }
 
 .list h3 {
