@@ -2,11 +2,11 @@
 <html lang="sv">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produktensdetalj</title>
 
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css">
 
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
 
@@ -18,9 +18,9 @@
 
 <body>
   <header>
-    <section>
+    
       <div class="wholeHead">
-        <img src="https://placehold.co/600x200 " alt="icon" class="icon" />
+        <img  class="icon" src="https://placehold.co/600x200 " alt="icon">
 
         <div class="searchAndIcons">
           <input type="search" placeholder="Sök produkt" class="search">
@@ -40,13 +40,14 @@
           <li class="nav-list-item"><a href="#">Kampanjer</a></li>
         </ul>
       </nav>
+    
   </header>
 
   <main>
     <div class="info-cart">
       <div class="info-cart-image">
-        <img class="info-cart-logo" src="bilder/favourite.png" width="20px" height="25px" alt="">
-        <img class="head-image" src="https://placehold.co/400x600" alt="" class="loremPic">
+        <img class="info-cart-logo" src="bilder/favourite.png" alt="">
+        <img class="head-image loremPic" src="https://placehold.co/400x600" alt="" >
       </div>
       <div class="info-item">
         <h2>Svart T-Shirt</h2>
@@ -55,8 +56,14 @@
           consequuntur nulla facilis quod expedita harum ducimus, sed officia mollitia odit voluptates natus nam. Quo,
           minus enim?</p>
         <span class="prise">199 SEK</span>
-        <a href="kassan.html"><button class="put" type="submit" value="">Lägg i varukrog</button>
+        <input type="button" value="lägg i varukorg" onclick="location.href='kassan.html';">
+
+<!--
+        <a href="kassan.html">
+          <button class="put">Lägg i varukrog</button>
         </a>
+        samma sak i produkter html sidan 
+-->
       </div>
     </div>
 
@@ -120,31 +127,25 @@
 
   <footer class="normal-footer">
     <div class="list-container">
-      <div class="list">
-        <h3>Shopping</h3>
-        <li>
-          <ul><a href="#">Vinterjackor</a></ul>
-          <ul><a href="#">Pufferjackor</a></ul>
-          <ul><a href="#">Kappa</a></ul>
-          <ul><a href="#">Trenchcoats</a></ul>
-        </li>
-      </div>
 
-      <div class="list">
-        <h3>Mina Sidor</h3>
-        <li>
-          <ul><a href="#">Mina Ordrar</a></ul>
-          <ul><a href="#">Mitt Konto</a></ul>
-        </li>
-      </div>
-
-      <div class="list">
-        <h3>Kundtjänst</h3>
-        <li>
-          <ul><a href="#">Returnpoulcy</a></ul>
-          <ul><a href="#">Integritetspolicy</a></ul>
-        </li>
-      </div>
+        <ul class="list">
+          <li class="blod-li">Shopping</li>        
+            <li><a href="#">Vinterjackor</a></li>
+            <li><a href="#">Pufferjackor</a></li>
+            <li><a href="#">Kappa</a></li>
+            <li><a href="#">Trenchcoats</a></li>
+        </ul>
+        <ul class="list">
+          <li class="blod-li">Mina Sidor</li>
+            <li><a href="#">Mina Ordrar</a></li>
+            <li><a href="#">Mitt Konto</a></li>
+        </ul>
+        <ul class="list">
+          <li class="blod-li">Kundtjänst</li>       
+            <li><a href="#">Returnpoulcy</a></li>
+            <li><a href="#">Integritetspolicy</a></li>
+        </ul>
+      
     </div>
 
     <div class="Company">&copy; Freaky Fashion</div>
@@ -160,12 +161,12 @@
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
+          <ul class="accordion-body">
             <li>Vinterjackor</li>
             <li>Pufferjackor</li>
             <li>Kappa</li>
             <li>Trenchcoats</li>
-          </div>
+          </ul>
         </div>
       </div>
       <div class="accordion-item">
@@ -177,10 +178,10 @@
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
+          <ul class="accordion-body">
             <li>Mina Order</li>
             <li>Mitt Konto</li>
-          </div>
+          </ul>
         </div>
       </div>
       <div class="accordion-item">
@@ -192,10 +193,10 @@
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
+          <ul class="accordion-body">
             <li>Returnpolicy</li>
             <li>Integritetspolicy</li>
-          </div>
+          </ul>
         </div>
       </div>
     </div>
