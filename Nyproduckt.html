@@ -26,36 +26,41 @@
                     Ny produkt
                 </h3>
                 <div>
-                    <p>
-                        <label for="name">Name</label> <br>
-                        <input type="text" name="fullName" id="fullName" maxlength="50" placeholder="Ange namn" required>
-                    </p>
+                    
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="fullName" id="name" maxlength="50" placeholder="Ange namn" required>
+                
                 </div>
-
-                <p>
+                    <br>
+                <div>
                     <label for="massage">Beskrivning</label> <br>
-                    <textarea name="message" id="message" cols="60" rows="10" placeholder="Ange beskrivning"></textarea>
-                </p>
-                <p>
-                    <label for="Pic">bild</label> <br>
+                    <textarea name="Message" id="message" cols="60" rows="10" placeholder="Ange beskrivning"></textarea>
+                </div>
+                    <br>
+                <div>
+                    <label for="PicInput">bild</label> <br>
                     <input type="file" required accept="image/*">
-                </p>
-                <p>
+                </div>
+                    <br>
+                <div>
                     <label for="sku">SKU</label><br>
-                    <input type="text" id="sku" name="sku" required pattern="[A-Za-z]{3}[0-9]{3}" title="AAA111"
+                    <input type="text" name="SKU" id="sku" required pattern="[A-Za-z]{3}[0-9]{3}" title="AAA111"
                         placeholder="Ange SKU"><br><br>
 
-                </p>
-                <p>
+                </div>
+                    <br>
+                <div>
                     <label for="Pris">Pris</label> <br>
-                    <input type="number">
-                </p>
-                <p>
+                    <input type="number" id="Prise">
+                </div>
+                    <br>
+                <div>
                     <label for="data">Publiseringsdatum</label> <br>
                     <input type="date" name="data" id="data" value="2023-05-10">
-                </p>
+                </div>
+                    <br>
 
-                <p>
+                <div>
                     <label for="Kategorier" id="Kategorier">Kategorier</label> <br>
                     <input type="checkbox">
                     <label for="T-shirt" id="T-Shirt">T-shirt</label><br>
@@ -65,8 +70,8 @@
                     <label for="byxor" id="byxor">byxor</label><br>
                     <input type="checkbox">
                     <label for="skor" id="skor">skor</label>
-                </p>
-
+                </div>
+                    <br>
                 <div class="läggTill">
                     <button name="läggTill" type="submit" value="">Läggtill</button>
                 </div>
