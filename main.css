@@ -66,6 +66,9 @@ body {
     top: 20px;
     left: 20px;
     border: solid;
+    background-color: black;
+    color: white;
+    border-color: black;
     border-radius: 3px;
     padding-left: 5px;
     padding-right: 5px;
@@ -210,20 +213,69 @@ aside > p {
 }
 
 .first-last {
-    display: inline-flex;
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
-    input {
-        max-width: 100%;
-        gap: 10px;
-    }
- 
 }
 
 
+.first-last-item {
+    width: 50%;
+    padding-right: 10px;
 
+    input {
+        width: 100%;
+    }
+}
 
+.img-slide-section {
+    position: relative;
+}
 
+.adress {
+    border: 1px solid;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
 
+    legend {
+        width: unset;
+        padding: unset;
+        float: unset;
+        margin-left: 10px;
+    }
+}
+.first-fieldset {
+    input {
+        width: 100%;
+    }
+}
+.second-fieldset {
+    input {
+        width: 50%;
+    } 
+}
+.third-fieldset {
+    input {
+        width: 70%;
+    }
+}
+.info-cart-image {
+    position: relative;
+}
+.info-cart-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.edit-bin {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
@@ -341,23 +393,15 @@ aside > p {
     }
     
 
-    .svart {
+    .color-box {
         border: solid;
-        margin-bottom: 0px;
         padding-top: 15px;
         display: flex;
-        justify-content: space-evenly;
-        
-    }
-    .KR{
-        display: grid;
-    }
-    .vit {
-        border: solid;
-        margin-bottom: 10px;
-        padding-top: 15px;
-        display: flex;
-        width: 100%;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        p {
+            width: 50%; 
+        }
     }
 
     .put {
@@ -365,10 +409,19 @@ aside > p {
     }
 
     .first-last {
-        display: block;
+        flex-direction: column;
+        .first-last-item {
+            width: 100%;
+        }
     }
     .lorem-inside-img {
         display: none;
+    }
+
+    .third-fieldset {
+        input {
+            width: 100%;
+        }
     }
 
 }
@@ -503,24 +556,20 @@ aside > p {
         margin-top: 15px; 
     }
     .lorem-inside-img {
-        position: relative;
         display: flex;
-        justify-content: space-between;
-        gap:10px;
         width: 100%;
-        height: auto;
+        gap: 10px;
         margin-bottom: 15px;
-        
     }
     
 
     .first-lorem {
         position: absolute;
         font-weight: bolder;
-        
-    }
-
- 
+        font-size: x-large;
+        left: 33%;
+        top: 45%;       
+    } 
 }
 
 
@@ -705,4 +754,13 @@ Administration
 }
 .accordion-button {
     font-weight: bold;
+}
+
+
+.lorem-inside-parent {
+    width: 33%;
+    position: relative;
+    img {
+        width: 100%;
+    }
 }
